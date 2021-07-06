@@ -6,12 +6,16 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Data
-public class SaveStudentResource {
+public class SaveProductResource {
     @NotNull
     @NotBlank
     private String name;
 
     @NotNull
     @NotBlank
-    private String lastName;
+    private String date;
+
+    @NotNull
+    @NotBlank
+    private String action;
 }

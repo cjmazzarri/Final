@@ -3,8 +3,9 @@ package com.example.resource;
 import lombok.Data;
 
 @Data
-public class StudentResource {
+public class ProductResource {
     private String id;
     private String name;
-    private String lastName;
+    private String date;
+    private String action;
 }

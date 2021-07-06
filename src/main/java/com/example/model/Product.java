@@ -8,8 +8,8 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Data
-@Table(name = "students")
-public class Student {
+@Table(name = "products")
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,5 +20,9 @@ public class Student {
 
     @NotNull
     @NotBlank
-    private String lastName;
+    private String date;
+
+    @NotNull
+    @NotBlank
+    private String action;
 }
